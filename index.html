@@ -3,77 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Political Party Template</title>
+    <title>APC - All Progressive Commission</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a', // Deep Navy
+                            light: '#3b82f6', // Bright Blue
+                            accent: '#dc2626', // Action Red
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- Header -->
-    <header class="bg-white shadow">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center">
-                    <div class="w-12 h-12 bg-blue-500 text-white flex items-center justify-center rounded-full text-2xl font-bold">
-                        APC
-                    </div>
-                    <h1 class="text-3xl font-bold text-gray-800 ml-4">All progressive comission</h1>
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-brand-blue text-white flex items-center justify-center rounded-lg text-lg font-bold font-serif shadow-md">
+                    APC
                 </div>
-                <h2 class="text-xl text-gray-600 italic">"pushing change in the life of people "</h2>
+                <span class="text-xl font-bold text-slate-900 tracking-tight">All Progressive Commission</span>
             </div>
+        </div>
+    </nav>
+
+    <header class="relative bg-gradient-to-br from-brand-blue to-slate-900 text-white py-24 lg:py-32">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-serif font-black mb-6 leading-tight">
+                Pushing Change in the <br/> <span class="text-blue-400">Lives of People</span>
+            </h1>
+            <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-10 font-light">
+                We believe in a future where integrity leads, affordability is guaranteed, and progress is for everyone.
+            </p>
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+            <svg class="absolute -bottom-24 -right-24 w-96 h-96 text-white" fill="currentColor" viewBox="0 0 200 200"><path d="M45,-76C58,-69,68,-57,76,-44C84,-31,90,-17,89,-3C88,11,80,25,70,37C60,49,48,59,35,66C22,73,8,77,-5,76C-18,75,-35,69,-48,60C-61,51,-70,39,-76,25C-82,11,-85,-5,-80,-19C-75,-33,-62,-45,-49,-52C-36,-59,-23,-61,-9,-63C5,-65,19,-67,33,-64Z" transform="translate(100 100)" /></svg>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-8">
+    <main class="container mx-auto px-6 py-16">
 
-        <!-- Values Section -->
-        <section id="values" class="mb-12">
-            <h3 class="text-4xl font-bold text-center mb-8 text-gray-800">Our Values</h3>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h4 class="text-2xl font-semibold mb-2">Honest</h4>
-                    <p> As a party we believe that you representitive should not lie to you </p>
+        <section id="values" class="mb-24">
+            <div class="text-center mb-16">
+                <h2 class="text-blue-600 font-bold uppercase tracking-wider text-sm mb-2">Why We Run</h2>
+                <h3 class="text-4xl font-serif font-bold text-slate-900">Our Core Values</h3>
+            </div>
 
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-blue-100 text-brand-blue rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-900">Honesty</h4>
+                    <p class="text-slate-600 leading-relaxed">We believe that your representative should never lie to you. Transparency is our foundation.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h4 class="text-2xl font-semibold mb-2">Affordility</h4>
-                    <p> you leader should focus on your ability to a afford food</p>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-900">Affordability</h4>
+                    <p class="text-slate-600 leading-relaxed">Your leadership should focus on your ability to afford food, housing, and basic needs.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h4 class="text-2xl font-semibold mb-2">Interigity</h4>
-                    
-                    <p> the people in the leading to country should have value </p>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-900">Integrity</h4>
+                    <p class="text-slate-600 leading-relaxed">The people leading the country should possess unwavering moral values and ethics.</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h4 class="text-2xl font-semibold mb-2">Improvement </h4>
-                        <p> the co0untr0y shoukd be improved by leader ship </p>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-slate-900">Improvement</h4>
+                    <p class="text-slate-600 leading-relaxed">Continuous improvement of our country's infrastructure and social systems.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Platform Section -->
-        <section id="platform">
-            <h3 class="text-4xl font-bold text-center mb-8 text-gray-800">Our Platform</h3>
-            <div class="bg-white p-8 rounded-lg shadow-lg">
-                <div class="mb-6">
-                    <h4 class="text-2xl font-semibold mb-2">Consumer protect</h4>
-                    <p>To stop the nature of the live control that company over consumer data </p>
-                </div>
-                <div class="mb-6">
-                    <h4 class="text-2xl font-semibold mb-2">Gun control</h4>
-                    <p>Limiting the nature of people who can own guns </p>
+        <section id="platform" class="bg-slate-100 rounded-3xl p-8 md:p-12 lg:p-16">
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl font-serif font-bold text-center mb-12 text-slate-900">Key Platform Issues</h3>
+                
+                <div class="grid gap-6">
+                    <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm flex flex-col md:flex-row gap-6 items-start border-l-4 border-brand-blue">
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold mb-2 text-slate-900">Consumer Protection</h4>
+                            <p class="text-slate-600">To stop the nature of the live control that companies have over consumer data. We believe in strict privacy laws that put the power back in your hands.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm flex flex-col md:flex-row gap-6 items-start border-l-4 border-brand-accent">
+                        <div class="flex-1">
+                            <h4 class="text-2xl font-bold mb-2 text-slate-900">Gun Control Reform</h4>
+                            <p class="text-slate-600">Limiting the nature of people who can own guns through sensible background checks and safety training requirements.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white mt-12">
-        <div class="container mx-auto px-6 py-4 text-center">
-            <p>&copy; 2025 Party Name. All Rights Reserved.</p>
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-2xl font-bold text-white font-serif mb-2">APC</div>
+                    <p class="text-sm">Pushing change for the people.</p>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-xs text-slate-500">
+                &copy; 2025 All Progressive Commission. All Rights Reserved.
+            </div>
         </div>
     </footer>
 
 </body>
 </html>
+
